@@ -19,4 +19,5 @@ RUN curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.6.0/deep
 RUN curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.6.0/audio-0.6.0.tar.gz && \
     tar xvf audio-0.6.0.tar.gz
 
- CMD ["deepspeech-server", "--config", "/config/config.json"]
+#A CMD ["deepspeech-server", "--config", "/config/config.json"]
+CMD ["bin/bash"]
