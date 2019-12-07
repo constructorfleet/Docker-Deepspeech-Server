@@ -8,7 +8,7 @@ COPY ./default.conf /config/.
 RUN apt-get update && \
     apt-get install -y python3 python3-dev python3-pip git
 
-RUN pip3 install -y pip3 install deepspeechi deepspeech-server
+RUN pip3  install deepspeech deepspeech-server
 
 WORKDIR /usr/srv/deepsearch
 # Download pre-trained English model and extract
