@@ -11,6 +11,8 @@ RUN apt-get update && \
 RUN pip3  install deepspeech deepspeech-server
 
 WORKDIR /usr/srv/deepsearch
+RUN apt-get update && \
+    apt-get install -y curl vim
 # Download pre-trained English model and extract
 RUN curl -LO https://github.com/mozilla/DeepSpeech/releases/download/v0.6.0/deepspeech-0.6.0-models.tar.gz && \
     tar xvf deepspeech-0.6.0-models.tar.gz
